@@ -3,9 +3,17 @@ import React, {Component} from 'react'
 //presentational/only renders props
 
 class Test extends Component {
+  constructor(props) {
+    super(props)
+  }
+
   render() {
     return(
-      <p>This is a paragraph.</p>
+      <div>
+        <p>This is a paragraph.</p>
+        //word is prop being passed down from Hello Component
+        <p>{this.props.word}</p>
+      </div>
     )
   }
 }

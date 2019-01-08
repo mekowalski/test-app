@@ -7,7 +7,7 @@ class Hello extends Component {
       <div>
         <h1>Hello World</h1>
         //grandchild
-        <Test />
+        <Test word='word'/>
       </div>
     )
   }
