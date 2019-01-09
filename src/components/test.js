@@ -14,7 +14,7 @@ class Test extends Component {
         <p>This is a paragraph.</p>
         //statement is prop being passed down from App Grandparent Component
         //not directly though
-        <p>{this.props.statement}</p>
+        <p>{this.props.statement} {this.props.mood}</p>
       </div>
     )
   }
