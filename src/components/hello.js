@@ -15,15 +15,6 @@ class Hello extends Component {
     }) //update state in real time
   }
 
-  handleSubmit = (e) => {
-    // debugger
-    //api call, endpoint and path
-    //comma then object{}
-    // fetch('api.giphy.com/v1/gifs/search', {})
-    //   .then(resp => resp.JSON())
-    //   .then(console.log(resp))
-  }
-
   render() {
     return(
       <div>
@@ -34,7 +25,7 @@ class Hello extends Component {
 
         //hold data in local state of Hello(this) component
         <input onChange= {this.handleChange} id='input' type='text'/>
-        <button onClick= {e => this.handleSubmit(e)}>Submit</button>
+        <button>Submit</button>
       </div>
     )
   }
