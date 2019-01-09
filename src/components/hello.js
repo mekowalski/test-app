@@ -10,9 +10,18 @@ class Hello extends Component {
 
   handleChange = (e) => {
     //debugger //this is an event handler
-    this.setState = {
+    this.setState ({
       [e.target.id]: e.target.value
-    } //update state
+    }) //update state in real time
+  }
+
+  handleSubmit = (e) => {
+    // debugger
+    //api call, endpoint and path
+    //comma then object{}
+    // fetch('api.giphy.com/v1/gifs/search', {})
+    //   .then(resp => resp.JSON())
+    //   .then(console.log(resp))
   }
 
   render() {
@@ -21,11 +30,11 @@ class Hello extends Component {
         <h1>Hello World</h1>
         //grandchild
         //recieving and passing down this prop
-        <Test statement= {this.props.statement} mood= 'stressed out'/>
+        <Test statement={this.props.statement} mood='stressed out'/>
 
         //hold data in local state of Hello(this) component
-        <input onChange= {this.handleChange} id='input' type="text" />
-        <button>Submit</button>
+        <input onChange= {this.handleChange} id='input' type='text'/>
+        <button onClick= {e => this.handleSubmit(e)}>Submit</button>
       </div>
     )
   }
