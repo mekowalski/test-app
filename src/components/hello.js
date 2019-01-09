@@ -19,11 +19,13 @@ class Hello extends Component {
     return(
       <div>
         <h1>Hello World</h1>
-        //grandchild
+        {//grandchild
         //recieving and passing down this prop
+        }
         <Test statement={this.props.statement} mood='stressed out'/>
 
-        //hold data in local state of Hello(this) component
+        {//hold data in local state of Hello(this) component
+        }
         <input onChange= {this.handleChange} id='input' type='text'/>
         <button>Submit</button>
       </div>
