@@ -31,7 +31,7 @@ class Hello extends Component {
         {//hold data in local state of Hello(this) component
         }
         {//create a from to provide input field
-          //submit it an input type, so weird
+          //submit is an input type, so weird
         }
         <form onSubmit={this.handleSubmit}>
           <input onChange={this.handleChange} id='input' type='text'/>
