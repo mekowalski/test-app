@@ -4,9 +4,15 @@ import Test from './test'
 
 class Hello extends Component {
   constructor() {
-    super() {
-      this.state = {}
-    }
+    super()
+    this.state = {} //store the input, is object to hold state
+  }
+
+  handleChange = (e) => {
+    //debugger //this is an event handler
+    this.setState = {
+      [e.target.id]: e.target.value
+    } //update state
   }
 
   render() {
@@ -18,7 +24,7 @@ class Hello extends Component {
         <Test statement= {this.props.statement} mood= 'stressed out'/>
 
         //hold data in local state of Hello(this) component
-        <input id='input' type="text" />
+        <input onChange= {this.handleChange} id='input' type="text" />
         <button>Submit</button>
       </div>
     )
