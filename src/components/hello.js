@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import Test from './test'
-//Hello is a Parent of Test and a Child of App 
+//Hello is a Parent of Test and a Child of App
 
 class Hello extends Component {
   render() {
@@ -8,7 +8,8 @@ class Hello extends Component {
       <div>
         <h1>Hello World</h1>
         //grandchild
-        <Test word='word'/>
+        //recieving and passing down this prop
+        <Test statement= {this.props.statement}/>
       </div>
     )
   }

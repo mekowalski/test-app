@@ -10,7 +10,8 @@ class App extends Component {
     return (
       <div className="App">
         //Child
-        <Hello />
+        //statement prop is being passed down to Hello child
+        <Hello statement='this is a statement'/>
       </div>
     );
   }

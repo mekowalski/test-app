@@ -12,8 +12,9 @@ class Test extends Component {
     return(
       <div>
         <p>This is a paragraph.</p>
-        //word is prop being passed down from Hello Component
-        <p>{this.props.word}</p>
+        //statement is prop being passed down from App Grandparent Component
+        //not directly though
+        <p>{this.props.statement}</p>
       </div>
     )
   }
