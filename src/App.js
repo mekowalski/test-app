@@ -4,7 +4,7 @@ import './App.css';
 import Hello from './components/hello'
 import Test from './components/test'
 
-//Parent/Main
+//Parent/Main to Hello & Grandparent to Test
 class App extends Component {
   render() {
     return (

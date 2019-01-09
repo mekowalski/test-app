@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 //importing the module, build it and export the Component
 //presentational/only renders props
+//Test is a Child to Hello
 
 class Test extends Component {
   constructor(props) {
