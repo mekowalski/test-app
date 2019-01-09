@@ -16,7 +16,9 @@ class Hello extends Component {
   }
 
   handleSubmit = (e) => {
-    debugger
+    fetch(`api.punkapi.com/v2/beers/`)
+      .then(resp => resp.JSON())
+      .then(myResponse => console.log(myResponse))
   }
 
   render() {

@@ -4,10 +4,6 @@ import React, {Component} from 'react'
 //Test is a Child to Hello
 
 class Test extends Component {
-  // constructor(props) {
-  //   super(props)
-  // }
-
   render() {
     return(
       <div>
