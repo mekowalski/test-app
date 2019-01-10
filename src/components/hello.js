@@ -16,9 +16,14 @@ class Hello extends Component {
   }
 
   handleSubmit = (e) => {
-    fetch(`https://api.punkapi.com/v2/beers/`)
-      .then(resp => resp.JSON())
-      .then(myResponse => console.log(myResponse))
+    // debugger
+    // fetch('https://api.punkapi.com/v2/beers')
+    //   .then(resp => resp.json())
+    //   .then(myResponse => console.log(myResponse))
+    e.preventDefault()
+    fetch(`https://api.punkapi.com/v2/beers?abv_gt=${this.state.input}`)
+     .then(resp => resp.json())
+     .then(myJson => console.log(myJson));
   }
 
   render() {
